@@ -1,0 +1,149 @@
+@keyframes titleAnimation {
+  0% {color: aquamarine; opacity: 1;}
+  50% {color: paleturquoise; opacity: 0.5;}
+  100% {color: aquamarine; opacity: 1;}
+}
+
+@keyframes imageAnimation {
+  0% {transform: rotate(0deg); transform: scale(1);}
+  25% {transform: rotate(2deg);}
+  50% {transform: scale(1.05);}
+  75% {transform: rotate(-2deg);}
+  100% {transform: scale(1); transform: rotate(0deg);}
+}
+
+@keyframes imageAnimation2 {
+  0% {width: 45%;}
+  100% {width: 100%;}
+
+}
+
+@keyframes breaklinesAnimation {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(1.05deg);}
+  50% {transform: rotate(0deg);}
+  75% {transform: rotate(-1.05deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.title{
+  font-size: 6em;
+  text-align: center;
+  margin-top: 80px;
+  color: red;
+  font-family: "Impact", sans-serif;
+  animation-name: titleAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  opacity: 0.8;
+}
+
+.subtitle {
+  font-size: 2em;
+  text-align: center;
+  color: darkblue;
+  font-family: "Impact", sans-serif;
+  margin-top: -140px;
+}
+
+.sub-subtitle {
+  font-size: 2em;
+  text-align: center;
+  color: darkcyan;
+  font-family: "Impact", sans-serif;
+  margin-top: 100px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+}
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 45%;
+  height: auto;
+  border-radius: 30px;
+}
+.image:hover {
+  /* transform: scale(1.05);
+  rotate: 2deg;
+  transition: all 0.3s ease; */
+      animation-name: imageAnimation;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+}
+.image:active{
+  width: 70%;
+  rotate: 2deg;
+  transition: all 0.3s ease;
+}
+.image-text {
+  font-size: 1.2em;
+  text-align: center;
+  color: darkblue;
+  font-family: "Arial", sans-serif;
+  margin-right: 190px;
+  margin-top: -100px;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+}
+.video {
+  display: block;
+  margin: 0 auto;
+  width: 45%;
+  height: auto;
+  border-radius: 30px;
+}
+.video:active{
+  width: 70%;
+  rotate: 2deg;
+  transition: all 0.3s ease;
+}
+
+.codeProjects {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+}
+.codeProjectImage {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  border-radius: 30px;
+}
+.codeProjectImage:hover {
+  animation-name: imageAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.break-lines {
+  animation-name: breaklinesAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  color: darkblue;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightskyblue;
+}
