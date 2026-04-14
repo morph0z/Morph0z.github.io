@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image" href="assets/images/can.png" />
+        <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jamal's Portfolio ART</title>
+        <style>
+            body { margin: 0; }
+        </style>
+    </head>
+
+    <body>
+        <script type="module" src="animeStuffProgram.js"></script>
+
+        <nav class = "navbar">
+            <ul class = "ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="programming.html">Programming</a></li>
+            </ul>
+        </nav>
+        <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
+        <script src="./lenisWork.js"></script>
+
+        <div class="textBoxesLeft">
+            <div class="textBoxLeft" style="white-space: pre-wrap;">ABOUT ME &#10; &#10;blah blah blah
+            </div>
+            <div class="textBoxLeft" style="white-space: pre-wrap;">ABOUT ME &#10; &#10;blah blah blah
+            </div>
+            <div class="textBoxLeft" style="white-space: pre-wrap;">ABOUT ME &#10; &#10;blah blah blah
+            </div>
+        </div>
+
+        <p class = "sub-subtitle">My Codings</p>
+        <div class = "codeProjects">
+            <a class = "codeProject" href="https://github.com/morph0z/KirbyModRemorphed" target="_blank" rel="noopener" title="My minecraft mod">
+                <img class = "codeProjectImage" src="assets/images/kirbymodremorphed.png" alt="Kirby Mod Remorphed" a/>
+            </a>
+
+            <a class = "codeProject" href="https://github.com/morph0z/Lost-At-Random" target="_blank" rel="noopener" title="My first game">
+                <img class = "codeProjectImage" src="assets/images/LostAtRandom.png" alt="Lost At Random"/>
+            </a>
+
+            <a class = "codeProject" href="https://github.com/morph0z/Sweating-Bullets" target="_blank" rel="noopener" title="My second game">
+                <img class = "codeProjectImage" src="assets/images/sweatingBullets.png" alt="Lost At Random"/>
+            </a>
+        </div>
+
+        <script type="module" src="./musicPlayer.js"></script>
+        <div class="music-container" id="music-container">
+            <div class="music-info">
+                <h4 id="title"></h4>
+                <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <audio src="assets/music/practice127.mp3" id="audio"></audio>
+            <div class="navigation">
+                <button id="prev" class="action-btn">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button id="play" class="action-btn action-btn-big">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button id="next" class="action-btn">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

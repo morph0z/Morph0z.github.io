@@ -1,57 +1,135 @@
+:root {
+  --Contrast-Color1: #1C0000;
+  --Contrast-Color2: #FAEEDC;
+
+  --Highlight-Color1: #FF4200;
+
+  --Other-Color1: #FFB800;
+  --Other-Color1-Alpha: rgb(255 221 0 / 0.3);
+  --Other-Color2: #FFDD00;
+
+  --hex-black-1: #000000;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 @keyframes titleAnimation {
-  0% {color: aquamarine; opacity: 1;}
-  50% {color: paleturquoise; opacity: 0.5;}
-  100% {color: aquamarine; opacity: 1;}
-}
-
-@keyframes imageAnimation {
-  0% {transform: rotate(0deg); transform: scale(1);}
-  25% {transform: rotate(2deg);}
-  50% {transform: scale(1.05);}
-  75% {transform: rotate(-2deg);}
-  100% {transform: scale(1); transform: rotate(0deg);}
-}
-
-@keyframes imageAnimation2 {
-  0% {width: 45%;}
-  100% {width: 100%;}
-
-}
-
-@keyframes breaklinesAnimation {
-  0% {transform: rotate(0deg);}
-  25% {transform: rotate(1.05deg);}
-  50% {transform: rotate(0deg);}
-  75% {transform: rotate(-1.05deg);}
-  100% {transform: rotate(0deg);}
+  0% {transform: translateY(100%); opacity: 0;}
+  100% {transform: translateY(0%); opacity: 100;}
 }
 
 .title{
   font-size: 6em;
   text-align: center;
-  margin-top: 80px;
-  color: red;
-  font-family: "Impact", sans-serif;
+  margin-top: 280px;
+  color: var(--Contrast-Color2);
+  font-family: "splatink", sans-serif;
   animation-name: titleAnimation;
   animation-duration: 4s;
-  animation-iteration-count: infinite;
-  opacity: 0.8;
+  animation-iteration-count: 1;
+
+  animation: bubble 1.0s forwards;
+
 }
 
 .subtitle {
   font-size: 2em;
   text-align: center;
-  color: darkblue;
-  font-family: "Impact", sans-serif;
-  margin-top: -140px;
+  color: var(--Contrast-Color2);
+  font-family: "splatink", sans-serif;
+}
+
+div.textBoxRight{
+  text-align: left;
+  display: flex;
+  position: relative;
+  border-left-width: 0;
+  margin-left: 0;
+  font-size: 28px;
+  font-style: normal;
+  height: 430px;
+  width: 800px;
+  right: 0;
+  bottom: 700px;
+  left: 800px;
+  word-wrap: anywhere;
+  color: var(--Contrast-Color2);
+  background-color: var(--Other-Color1);
+  border-radius: 15px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.textBoxesLeft{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 454px;
+  margin-top: -91px;
+  margin-left: 0;
+  top: -162px;
+  position: absolute;
+  pointer-events: auto;
+  width: 800px;
+  height: 1px;
+}
+
+div.textBoxLeft{
+  text-align: left;
+  display: flex;
+  position: relative;
+  border-left-width: 0;
+  margin-left: 0;
+  font-size: 28px;
+  font-style: normal;
+  height: 400px;
+  width: 800px;
+  right: 0;
+  bottom: -590px;
+  left: 41px;
+  word-wrap: anywhere;
+  color: var(--Contrast-Color2);
+  background-color: var(--Other-Color1);
+  border-radius: 15px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .sub-subtitle {
   font-size: 2em;
   text-align: center;
-  color: darkcyan;
-  font-family: "Impact", sans-serif;
+  color: var(--Contrast-Color2);
+  font-family: "utendo", sans-serif;
   margin-top: 100px;
+}
+
+#intro3d{
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+
+#hat3d{
+  position: relative;
+  bottom: 600px;
+  z-index: -1;
+  height: 1px;
+
+  pointer-events: none;
+}
+
+#char3d{
+  position: relative;
+  right: 40%;
+  height: 800px;
+  width: 1px;
+  pointer-events: none;
 }
 
 .images {
@@ -63,24 +141,15 @@
   margin-top: 30px;
 }
 .image {
+  max-height: none;
+  max-width: 99%;
+  position:relative;
+
   display: block;
   margin: 0 auto;
   width: 45%;
   height: auto;
   border-radius: 30px;
-}
-.image:hover {
-  /* transform: scale(1.05);
-  rotate: 2deg;
-  transition: all 0.3s ease; */
-      animation-name: imageAnimation;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-}
-.image:active{
-  width: 70%;
-  rotate: 2deg;
-  transition: all 0.3s ease;
 }
 .image-text {
   font-size: 1.2em;
@@ -89,6 +158,10 @@
   font-family: "Arial", sans-serif;
   margin-right: 190px;
   margin-top: -100px;
+}
+
+.button{
+  width: 23%;
 }
 
 .videos {
@@ -106,20 +179,17 @@
   height: auto;
   border-radius: 30px;
 }
-.video:active{
-  width: 70%;
-  rotate: 2deg;
-  transition: all 0.3s ease;
-}
 
 .codeProjects {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   align-items: flex-start;
-  gap: 30px;
-  margin-top: 30px;
+  gap: 322px;
+  margin-top: 150px;
+  margin-left: 832px;
 }
+
 .codeProjectImage {
   display: block;
   margin: 0 auto;
@@ -133,17 +203,221 @@
   animation-iteration-count: infinite;
 }
 
-.break-lines {
-  animation-name: breaklinesAnimation;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  color: darkblue;
-  margin-top: 30px;
-  margin-bottom: 50px;
+* {
+  font-family: "utendo", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: lightskyblue;
+  background-color: var(--Contrast-Color1);
+}
+
+.music-container {
+  background-color: var(--Other-Color1);
+  border-radius: 15px;
+  display: flex;
+
+  z-index: 10;
+  position: fixed;
+  right: 1400px;
+  top: 700px;
+  height: 83px;
+}
+
+.music-container.play {
+  animation-play-state: running;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  border: 0;
+  background: none;
+  color: var(--Contrast-Color1);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.action-btn.action-btn-big {
+  color: var(--Contrast-Color1);
+  font-size: 30px;
+}
+
+.action-btn:focus {
+  outline: 0;
+}
+
+.music-info {
+  background-color: var(--Other-Color1-Alpha);
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  padding: 10px 10px 10px 10px;
+  opacity: 0;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  z-index: 0;
+}
+
+.music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.music-info h4 {
+  margin: 0;
+}
+
+.progress-container {
+  background: var(--Contrast-Color2);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: var(--Other-Color2);
+  border-radius: 5px;
+  height: 100%;
+  width: 0;
+  transition: width 0.1s linear;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--Other-Color1);
+  display: flex;
+  justify-content: center;
+}
+
+ul li a {
+  animation: doneHoverNav 0.5s;
+  display: block;
+  color: var(--Contrast-Color1);
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@keyframes hoverNav {
+  from {background-color: var(--Other-Color1)}
+  to {background-color: var(--Other-Color2)}
+}
+
+@keyframes doneHoverNav {
+  from {background-color: var(--Other-Color2)}
+  to {background-color: var(--Other-Color1)}
+}
+
+ul li a:hover {
+  animation: hoverNav 0.5s;
+  background-color: var(--Other-Color2)
+}
+
+@font-face {
+  font-family: 'utendo';
+  src: url(assets/fonts/utendo-regular.woff2) format(woff2),
+  url(assets/fonts/utendo-regular.woff) format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'splatink';
+  src: url(assets/fonts/splatink.woff2) format(woff2),
+  url(assets/fonts/splatink.woff) format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+#layout-dialog {
+  --overlay-alpha: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+  background: transparent;
+  pointer-events: none;
+  background-color: color-mix(in srgb, var(--hex-black-1), transparent var(--overlay-alpha));
+}
+
+#layout-dialog[open] {
+  --overlay-alpha: 40%;
+  pointer-events: auto;
+}
+
+#layout-dialog::backdrop {
+  background: transparent;
+}
+
+#layout-dialog .item {
+  position: relative;
+  visibility: hidden;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 80%;
+  height: 80%;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 5px solid var(--Other-Color2);
+  font-size: 1rem;
+  color: var(--Other-Color2);
+  background-color: var(--Other-Color1);
+}
+
+#layout-dialog[open] .item {
+  visibility: visible;
+}
+
+#layout-dialog[open] .item .image{
+  visibility: visible;
+  scale: 200%
+}
+
+#layout-usage-animate-modal-dialog .item {
+  cursor: pointer;
+}
+
+#layout-usage-animate-modal-dialog .item.is-open {
+  visibility: hidden;
+}
+
+#layout-usage-animate-modal-dialog .item p {
+  text-align: left;
+  display: none;
+}
+
+#layout-dialog .item p {
+  padding-top: 1rem;
+  border-top: 1px solid currentColor;
+}
+
+#layout-dialog[open] .item p {
+  display: block;
 }
