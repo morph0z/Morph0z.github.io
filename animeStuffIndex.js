@@ -1,4 +1,4 @@
-import {createDraggable, utils, spring, animate, onScroll, createLayout} from 'animejs';
+import {createDraggable, utils, spring, animate, onScroll, createLayout} from './animejs';
 
 const [ $text ] = utils.$('textBoxRight');
 
