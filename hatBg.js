@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 const width = window.innerWidth, height = window.innerHeight;
 
-import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
-import {OrbitControls} from "three/addons";
+import {GLTFLoader} from './three/examples/jsm/loaders/GLTFLoader.js';
+import {OrbitControls} from "./three/addons";
 
 // init
 
