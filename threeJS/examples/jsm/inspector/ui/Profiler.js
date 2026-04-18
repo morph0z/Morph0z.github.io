@@ -1,4 +1,4 @@
-import { EventDispatcher } from 'three';
+import { EventDispatcher } from '/threeJS/build/three.module.js';
 import { Style } from './Style.js';
 import { getItem, setItem } from '../Inspector.js';
 

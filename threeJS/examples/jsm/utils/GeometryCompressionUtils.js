@@ -3,7 +3,7 @@ import {
 	Matrix3,
 	Matrix4,
 	Vector3
-} from 'three';
+} from '/threeJS/build/three.module.js';
 
 /**
  * @module GeometryCompressionUtils

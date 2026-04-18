@@ -5,7 +5,7 @@ import {
 	SRGBColorSpace,
 	Vector2,
 	Vector3
-} from 'three';
+} from '/threeJS/build/three.module.js';
 
 /**
  * An exporter for OBJ.

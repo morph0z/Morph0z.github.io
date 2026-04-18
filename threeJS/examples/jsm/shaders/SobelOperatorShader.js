@@ -1,6 +1,6 @@
 import {
 	Vector2
-} from 'three';
+} from '/threeJS/build/three.module.js';
 
 /**
  * @module SobelOperatorShader

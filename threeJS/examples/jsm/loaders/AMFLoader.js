@@ -7,7 +7,7 @@ import {
 	Loader,
 	Mesh,
 	MeshPhongMaterial
-} from 'three';
+} from '/threeJS/build/three.module.js';
 import { unzipSync } from '../libs/fflate.module.js';
 
 /**

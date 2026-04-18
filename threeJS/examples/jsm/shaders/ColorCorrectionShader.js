@@ -1,6 +1,6 @@
 import {
 	Vector3
-} from 'three';
+} from '/threeJS/build/three.module.js';
 
 /**
  * @module ColorCorrectionShader

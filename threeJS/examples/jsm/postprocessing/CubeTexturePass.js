@@ -7,7 +7,7 @@ import {
 	ShaderLib,
 	ShaderMaterial,
 	UniformsUtils
-} from 'three';
+} from '/threeJS/build/three.module.js';
 import { Pass } from './Pass.js';
 
 /**

@@ -2,7 +2,7 @@ import {
 	MathUtils,
 	Quaternion,
 	Vector3
-} from 'three';
+} from '/threeJS/build/three.module.js';
 
 /**
  * @module CameraUtils

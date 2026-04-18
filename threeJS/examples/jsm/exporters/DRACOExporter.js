@@ -1,4 +1,4 @@
-import { Color, ColorManagement, SRGBColorSpace } from 'three';
+import { Color, ColorManagement, SRGBColorSpace } from '/threeJS/build/three.module.js';
 
 /* global DracoEncoderModule */
 

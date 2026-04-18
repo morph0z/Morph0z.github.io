@@ -1,7 +1,7 @@
 import {
 	Vector2,
 	Vector3
-} from 'three';
+} from '/threeJS/build/three.module.js';
 
 /**
  * @module VolumeShader

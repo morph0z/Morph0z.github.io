@@ -3,7 +3,7 @@ import {
 	Loader,
 	Matrix4,
 	Vector3
-} from 'three';
+} from '/threeJS/build/three.module.js';
 import { gunzipSync } from '../libs/fflate.module.js';
 import { Volume } from '../misc/Volume.js';
 

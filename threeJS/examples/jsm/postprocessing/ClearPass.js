@@ -1,6 +1,6 @@
 import {
 	Color
-} from 'three';
+} from '/threeJS/build/three.module.js';
 import { Pass } from './Pass.js';
 
 /**

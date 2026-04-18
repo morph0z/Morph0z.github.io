@@ -2,7 +2,7 @@ import {
 	FileLoader,
 	Loader,
 	ShapePath
-} from 'three';
+} from '/threeJS/build/three.module.js';
 
 /**
  * A loader for loading fonts.

@@ -1,4 +1,4 @@
-import { MOUSE, TOUCH, Plane, Raycaster, Vector2, Vector3 } from 'three';
+import { MOUSE, TOUCH, Plane, Raycaster, Vector2, Vector3 } from '/threeJS/build/three.module.js';
 
 import { OrbitControls } from './OrbitControls.js';
 

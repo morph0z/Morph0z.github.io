@@ -1,7 +1,7 @@
 import {
 	Matrix4,
 	Vector2
-} from 'three';
+} from '/threeJS/build/three.module.js';
 
 /**
  * @module SSAOShader

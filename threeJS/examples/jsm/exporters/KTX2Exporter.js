@@ -14,7 +14,7 @@ import {
 	SRGBTransfer,
 	DataTexture,
 	REVISION,
-} from 'three';
+} from '/threeJS/build/three.module.js';
 
 import {
 	createDefaultContainer,

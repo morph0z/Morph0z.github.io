@@ -1,7 +1,7 @@
 import {
 	FileLoader,
 	Loader
-} from 'three';
+} from '/threeJS/build/three.module.js';
 
 import { unzipSync } from '../libs/fflate.module.js';
 import { USDAParser } from './usd/USDAParser.js';

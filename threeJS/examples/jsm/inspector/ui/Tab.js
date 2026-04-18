@@ -1,4 +1,4 @@
-import { EventDispatcher } from 'three';
+import { EventDispatcher } from '/threeJS/build/three.module.js';
 
 /**
  * Tab class

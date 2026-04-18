@@ -5,7 +5,7 @@ import {
 	Matrix3,
 	Ray,
 	Vector3
-} from 'three';
+} from '/threeJS/build/three.module.js';
 
 // module scope helper variables
 

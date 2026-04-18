@@ -7,7 +7,7 @@ import {
 	DepthTexture,
 	NearestFilter,
 	HalfFloatType
-} from 'three';
+} from '/threeJS/build/three.module.js';
 import { Pass, FullScreenQuad } from './Pass.js';
 
 /**
