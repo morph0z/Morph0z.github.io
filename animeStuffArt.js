@@ -1,4 +1,4 @@
-import {createLayout, utils} from "/animejs/dist/modules/index.js";
+import {createLayout, utils} from "/animeJS/dist/modules/index.js";
 
 const buttons = utils.$('button');
 
