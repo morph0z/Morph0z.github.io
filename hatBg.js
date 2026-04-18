@@ -1,8 +1,8 @@
-import * as THREE from 'https://morph0z.github.io/node_modules/three/build/three.module.js';
+import * as THREE from 'three';
 const width = window.innerWidth, height = window.innerHeight;
 
-import {GLTFLoader} from 'https://morph0z.github.io/node_modules/three/examples/jsm/loaders/GLTFLoader';
-import {OrbitControls} from "https://morph0z.github.io/node_modules/three/examples/jsm/controls/OrbitControls.js";
+import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
+import {OrbitControls} from "three/examples/jsm/controls/OrbitControls.js";
 
 // init
 
