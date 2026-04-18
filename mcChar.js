@@ -1,7 +1,7 @@
-import * as THREE from 'three';
+import * as THREE from '/threeJS/build/three.module.js';
 const width = window.innerWidth, height = window.innerHeight;
 
-import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
+import {GLTFLoader} from '/threeJS/examples/jsm/loaders/GLTFLoader.js';
 // init
 
 const assetLoader = new GLTFLoader();

@@ -1,8 +1,8 @@
-import * as THREE from '/three';
+import * as THREE from '/threeJS/build/three.module.js';
 const width = window.innerWidth, height = window.innerHeight;
 
-import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
-import {OrbitControls} from "three/examples/jsm/controls/OrbitControls.js";
+import {GLTFLoader} from '/threeJS/examples/jsm/loaders/GLTFLoader.js';
+import {OrbitControls} from "/threeJS/examples/jsm/controls/OrbitControls.js";
 
 // init
 
