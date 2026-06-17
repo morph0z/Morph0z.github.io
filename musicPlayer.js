@@ -27,7 +27,7 @@ const songs = ['practice24','practice32','practice43','practice44','practice50'
                      ,'practice251full','practice252','practice255','practice258','practice260','practice264','practice268','practice269',
                      'practice269fuller','practice271','practice272','practice273','practice274','practice274full','practice277fuller','practice284',
                       'practice286','practice289slightlybitmoreBetter','practice299','practice300','practice301','practice303','practice304',
-                      'practice305','practice309','practice309pianoSolo','practice311','practice314'
+                      'practice305','practice309','practice309pianoSolo','practice311','practice314','practice316'
               ];
 
 // Keep track of song
