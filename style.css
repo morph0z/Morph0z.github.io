@@ -18,6 +18,7 @@ html, body {
 
 @view-transition {
   navigation: auto;
+
 }
 
 @keyframes titleAnimation {
