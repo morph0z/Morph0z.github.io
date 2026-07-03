@@ -20,15 +20,15 @@ html, body {
   navigation: auto;
 }
 
-::view-transition-group(main){
+::view-transition-group(root){
   animation-duration: 0.5s;
 }
 
-::view-transition-old(main){
+::view-transition-old(root){
   animation-name: scale-slide-out;
 }
 
-::view-transition-new(main){
+::view-transition-new(root){
   animation-name: scale-slide-in;
 }
 
