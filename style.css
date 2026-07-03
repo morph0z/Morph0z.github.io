@@ -18,7 +18,32 @@ html, body {
 
 @view-transition {
   navigation: auto;
+}
 
+::view-transition-group(main){
+  animation-duration: 0.5s;
+}
+
+::view-transition-old(main){
+  animation-name: scale-slide-out;
+}
+
+::view-transition-new(main){
+  animation-name: scale-slide-in;
+}
+
+@keyframes scale-slide-out {
+  to[
+    translate: -100vm;
+    scale: 0.2;
+  ]
+}
+
+@keyframes scale-slide-in {
+  from[
+    translate: 100vm;
+    scale: 0.2;
+  ]
 }
 
 @keyframes titleAnimation {
