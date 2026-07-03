@@ -25,24 +25,22 @@ html, body {
 }
 
 ::view-transition-old(page-content){
-  animation-name: scale-slide-out;
+  animation-name: slide-out;
 }
 
 ::view-transition-new(page-content){
-  animation-name: scale-slide-in;
+  animation-name: slide-in;
 }
 
-@keyframes scale-slide-out {
+@keyframes slide-out {
   to[
     translate: -100vm;
-    scale: 0.2;
   ]
 }
 
-@keyframes scale-slide-in {
+@keyframes slide-in {
   from[
     translate: 100vm;
-    scale: 0.2;
   ]
 }
 
