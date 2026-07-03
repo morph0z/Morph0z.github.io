@@ -1,4 +1,4 @@
-import {createLayout, utils} from "/animeJS/dist/modules/index.js";
+import {createLayout, utils} from "https://esm.sh/animejs";
 
 const buttons = utils.$('button');
 
