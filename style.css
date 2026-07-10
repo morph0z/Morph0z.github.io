@@ -66,7 +66,7 @@ div.textBoxRight{
   bottom: 700px;
   left: 800px;
   word-wrap: anywhere;
-  color: var(--text-on-CC1);
+  color: var(--text-on-CC2);
   background-color: var(--Contrast-Color2);
   border-radius: 15px;
   padding-top: 30px;
@@ -102,7 +102,7 @@ div.textBoxLeft{
   bottom: -590px;
   left: 41px;
   word-wrap: anywhere;
-  color: var(--text-on-CC1);
+  color: var(--text-on-CC2);
   background-color: var(--Contrast-Color2);
   border-radius: 15px;
   padding-top: 30px;
