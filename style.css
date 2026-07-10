@@ -1,12 +1,14 @@
 :root {
   --Contrast-Color1: #f6f3f4;
   --Contrast-Color2: #7d363e;
+  --Contrast-Color2-A: rgb(125 54 62 / 0.3);
+
+ --text-on-CC1: #7d363e;
+ --text-on-CC2: #ffffff;
 
   --Highlight-Color1: #cc3378;
 
-  --Other-Color1: #FFB800;
-  --Other-Color1-Alpha: rgb(255 221 0 / 0.3);
-  --Other-Color2: #FFDD00;
+  --color-accent: #cc3378;
 
   --hex-black-1: #000000;
 }
@@ -22,26 +24,6 @@ html, body {
 
 ::view-transition-group(page-content){
   animation-duration: 0.5s;
-}
-
-::view-transition-old(page-content){
-  animation-name: slide-out;
-}
-
-::view-transition-new(page-content){
-  animation-name: slide-in;
-}
-
-@keyframes slide-out {
-  to[
-    translate: -100vm;
-  ]
-}
-
-@keyframes slide-in {
-  from[
-    translate: 100vm;
-  ]
 }
 
 @keyframes titleAnimation {
@@ -67,7 +49,7 @@ html, body {
   font-size: 2em;
   text-align: center;
   color: var(--Contrast-Color2);
-  font-family: "splatink", sans-serif;
+  font-family: "utendo", sans-serif;
 }
 
 div.textBoxRight{
@@ -84,7 +66,7 @@ div.textBoxRight{
   bottom: 700px;
   left: 800px;
   word-wrap: anywhere;
-  color: var(--Contrast-Color2);
+  color: var(--text-on-CC1);
   background-color: var(--Contrast-Color2);
   border-radius: 15px;
   padding-top: 30px;
@@ -120,7 +102,7 @@ div.textBoxLeft{
   bottom: -590px;
   left: 41px;
   word-wrap: anywhere;
-  color: var(--Contrast-Color2);
+  color: var(--text-on-CC1);
   background-color: var(--Contrast-Color2);
   border-radius: 15px;
   padding-top: 30px;
@@ -285,7 +267,7 @@ body {
 }
 
 .music-info {
-  background-color: var(--Other-Color1-Alpha);
+  background-color: var(--Contrast-Color2-A);
   border-radius: 15px 15px 0 0;
   position: absolute;
   top: 0;
@@ -317,7 +299,7 @@ body {
 }
 
 .progress {
-  background-color: var(--Other-Color2);
+  background-color: var(--color-accent);
   border-radius: 5px;
   height: 100%;
   width: 0;
@@ -344,17 +326,17 @@ ul li a {
 
 @keyframes hoverNav {
   from {background-color: var(--Contrast-Color2)}
-  to {background-color: var(--Other-Color2)}
+  to {background-color: var(--color-accent)}
 }
 
 @keyframes doneHoverNav {
-  from {background-color: var(--Other-Color2)}
+  from {background-color: var(--color-accent)}
   to {background-color: var(--Contrast-Color2)}
 }
 
 ul li a:hover {
   animation: hoverNav 0.5s;
-  background-color: var(--Other-Color2)
+  background-color: var(--color-accent)
 }
 
 @font-face {
@@ -413,9 +395,9 @@ ul li a:hover {
   height: 80%;
   padding: 2rem;
   border-radius: 1rem;
-  border: 5px solid var(--Other-Color2);
+  border: 5px solid var(--color-accent);
   font-size: 1rem;
-  color: var(--Other-Color2);
+  color: var(--color-accent);
   background-color: var(--Contrast-Color2);
 }
 
