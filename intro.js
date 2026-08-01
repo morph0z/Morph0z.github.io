@@ -1,9 +1,9 @@
-import * as THREE from '/threeJS/build/three.module.js';
+import * as THREE from 'three';
 const width = window.innerWidth, height = window.innerHeight;
 
-import {GLTFLoader} from '/threeJS/examples/jsm/loaders/GLTFLoader.js';
-import {OrbitControls} from "/threeJS/examples/jsm/controls/OrbitControls.js";
-import {LoopOnce} from "/threeJS/build/three.module.js";
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {OrbitControls} from "three/addons/controls/OrbitControls.js";
+import {AnimationAction} from "three/src/animation/AnimationAction.js";
 
 // init
 
@@ -45,7 +45,7 @@ assetLoader.load(introUrl.href, function(gltf) {
     // Play a certain animation
     const clip = THREE.AnimationClip.findByName(clips, 'Shatter');
     const action = mixer.clipAction(clip);
-    action.setLoop(LoopOnce, 1);
+    action.setLoop(AnimationAction.LOOP_ONCE, 1);
     action.clampWhenFinished = true;
     action.setDuration(3);
     action.play();
