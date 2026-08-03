@@ -1,7 +1,7 @@
 {
   "asset": {
     "version": "2.0",
-    "generator": "THREE.GLTFExporter r183"
+    "generator": "THREE.GLTFExporter r185"
   },
   "scenes": [
     {
@@ -3466,9 +3466,9 @@
         "roughnessFactor": 1
       },
       "emissiveFactor": [
-        1,
-        0.054480276435339814,
-        0
+        0.6038273388475408,
+        0.033104766565152086,
+        0.1878207722902346
       ],
       "doubleSided": true,
       "name": "Material"

@@ -1,0 +1,57 @@
+div.textBoxRight{
+  text-align: left;
+  display: flex;
+  position: relative;
+  border-left-width: 0;
+  margin-left: 0;
+  font-size: 28px;
+  font-style: normal;
+  height: 430px;
+  width: 800px;
+  right: 0;
+  bottom: 700px;
+  left: 800px;
+  word-wrap: anywhere;
+  color: var(--text-on-CC2);
+  background-color: var(--Contrast-Color2);
+  border-radius: 15px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.textBoxesLeft{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 454px;
+  margin-top: -91px;
+  margin-left: 0;
+  top: -162px;
+  position: absolute;
+  pointer-events: auto;
+  width: 800px;
+  height: 1px;
+}
+
+div.textBoxLeft{
+  text-align: left;
+  display: flex;
+  position: relative;
+  border-left-width: 0;
+  margin-left: 0;
+  font-size: 28px;
+  font-style: normal;
+  height: 400px;
+  width: 800px;
+  right: 0;
+  bottom: -590px;
+  left: 41px;
+  word-wrap: anywhere;
+  color: var(--text-on-CC2);
+  background-color: var(--Contrast-Color2);
+  border-radius: 15px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
