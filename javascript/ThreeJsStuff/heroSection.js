@@ -54,11 +54,17 @@ renderer.setAnimationLoop(animate);
 
 camera_pivot.rotateOnAxis( Y_AXIS, 0.01 ); 
 
-window.addEventListener('resize', function() {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-});
+window.addEventListener('load', function() {
+    model.rotation.z = 0
+    camera.position.set( 15, -5, 0 );
+    camera.lookAt( camera_pivot.position );
+})
+
+//window.addEventListener('resize', function() {
+//    camera.aspect = window.innerWidth / window.innerHeight;
+//    camera.updateProjectionMatrix();
+//    renderer.setSize(window.innerWidth, window.innerHeight);
+//});
 
 
 let oldz = 0

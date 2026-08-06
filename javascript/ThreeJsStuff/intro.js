@@ -6,6 +6,8 @@ import {OrbitControls} from "three/addons/controls/OrbitControls.js";
 import {AnimationAction} from "three/src/animation/AnimationAction.js";
 
 // init
+//TODO replace all this with a gif
+
 
 const assetLoader = new GLTFLoader();
 const introUrl = new URL('/assets/models/intro.gltf', import.meta.url);

@@ -29,7 +29,7 @@ const songs = ['practice24','practice32','practice43','practice44','practice50'
                      ,'practice286','practice289slightlybitmoreBetter','practice299','practice300','practice301','practice303','practice304'
                      ,'practice305','practice309','practice309pianoSolo','practice311','practice314','practice316','practice317','practice317bit'
                      ,'practice318','practice319pre','practice319','practice320','practice322','practice324','practice327','practice328','practice330'
-                     ,'practice331'
+                     ,'practice331', 'practice333fuller', 'practice340', 'practice341slightlybetter', 'practice342', 'practice343slightlybetter', 'practice344'
               ];
 
 // Keep track of song
@@ -40,7 +40,7 @@ loadSong(songs[songIndex]);
 
 // Update song details
 function loadSong(song) {
-  audio.src = `assets/music/${song}.mp3`;
+  audio.src = `/assets/music/${song}.mp3`;
   title.innerText = song;
 }
 

@@ -2,18 +2,16 @@ import {createLayout, utils} from "https://esm.sh/animejs";
 
 const buttons = utils.$('button');
 
-// Create demo dialog and append it to the body
 const $dialog = document.createElement('dialog');
 $dialog.id = 'layout-dialog';
 document.body.appendChild($dialog);
 
-// Create the modal layout by setting the dialog as the root
-// Since the elements are not yet part of the modal root, it's necessary to specify all animated children
-// to tell the layout what to look for during an update
+
 const modalLayout = createLayout($dialog, {
     children: ['.item', '.image'],
     properties: ['--overlay-alpha'],
 });
+
 
 const closeModal = (e) => {
     let $item;
@@ -21,7 +19,7 @@ const closeModal = (e) => {
         $dialog.close();
         $item = buttons.find(item => item.classList.contains('is-open'));
         $item.classList.remove('is-open'); // Makes the clicked element visible again
-        $item.focus(); // Focus to the closed element to preserve the keyboard navigation flow
+        $item.focus();
     });
 };
 

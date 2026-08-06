@@ -1,16 +1,16 @@
 import {createDraggable, utils, spring, animate, onScroll, createLayout, stagger} from 'https://esm.sh/animejs';
 
-const [ $text ] = utils.$('textBoxRight');
+utils.$('.textBoxCenter').forEach($textBoxCenter => {
+    createDraggable($textBoxCenter, {
+        container: [0, 0, 0, 0],
+        releaseEase: spring({ bounce: .7 })
+    })
+});;
 
-createDraggable('.textBoxLeft', {
-    container: [0, 0, 0, 0],
-    releaseEase: spring({ bounce: .7 })
-});
-
-animate('.textBoxLeft', {
-    x: [-1000, 0],
+animate('.textBoxCenter',{
+    x: [-2000, 0],
     loop: false,
     delay: stagger(500),
     ease: spring({ bounce: .35 }),
-    autoplay: onScroll({container: '.scroll-container'})
-})
+    autoplay: true
+});

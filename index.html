@@ -5,17 +5,17 @@
     <meta charset="UTF-8" />
 
     <!-- Website Icon -->
-    <link rel="icon" type="image" href="assets/images/MorphoProperTransparent.png" />
+    <link rel="icon" type="image" href="/assets/images/MorphoProperTransparent.png" />
 
     <!-- Import Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.21/dist/lenis.css">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styleSheets/index/indexBase.css" />
-    <link rel="stylesheet" href="styleSheets/index/indexThree.css" />
-    <link rel="stylesheet" href="styleSheets/index/indexAnime.css" />
-    <link rel="stylesheet" href="styleSheets/musicPlayer.css" />
+    <link rel="stylesheet" href="/styleSheets/index/indexBase.css" />
+    <link rel="stylesheet" href="/styleSheets/index/indexThree.css" />
+    <link rel="stylesheet" href="/styleSheets/index/indexAnime.css" />
+    <link rel="stylesheet" href="/styleSheets/musicPlayer.css" />
     
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,33 +41,33 @@
     <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
     
     <!-- lenis -->
-    <script src="./javascript/lenis.js"></script>
+    <script src="/javascript/lenis.js"></script>
+
+    <!-- Anime Script -->
+    <script type="module" src="/javascript/AnimeJsStuff/animeIndex.js"></script>
 
 
     <!-- 3D Intro / loading screen -->
-    <script type="module" src="./javascript/ThreeJsStuff/intro.js"></script>
+    <script type="module" src="/javascript/ThreeJsStuff/intro.js"></script>
     <div id="intro3d"></div>
 
 
     <!-- Navigation Bar -->
     <nav class = "navbar">
       <ul class = "ul">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
         <li><a href="/html/art.html">Art</a></li>
         <li><a href="/html/programming.html">Programming</a></li>
       </ul>
     </nav>
 
 
-    <!-- Anime Script -->
-    <script type="module" src="./javascript/AnimeJsStuff/animeIndex.js"></script>
-
     <!-- Title and Subtitle -->
     <div class = "heroSection">
       <h1 class = "title">A REALLY COOL PORTFOLIO</h1>
       <p class = "subtitle">Programming, 3D Art, and Music!</p>
 
-      <script type="module" src="./javascript/ThreeJsStuff/heroSection.js"></script>
+      <script type="module" src="/javascript/ThreeJsStuff/heroSection.js"></script>
       <div id="hero3d"></div>
     </div>
 
@@ -87,18 +87,23 @@
 
     
     <!-- Minecraft Character -->
-    <script type="module" src="./javascript/ThreeJsStuff/minecraftCharater.js"></script>
+    <script type="module" src="/javascript/ThreeJsStuff/minecraftCharater.js"></script>
     <div id="char3d"></div>
 
-    <div class="textBoxRight" style="white-space: pre-wrap;">ABOUT ME <br>
-      I go by Morph0z online, and I am a programmer that mostly works on game development projects. I am currently in high school, and I am open to jobs or internships. Some of the skills I have are as previously mentioned programming, as well as animation in 2D and 3D, music composition and, 3D modeling. <br>(P.S. All the music on this site is made by me! (P.S.S Except for Practice 241 which is a remix of windmill isle from sonic unleashed.))
+
+    <div class="infoGroupRight">
+      <div id="textBoxRight1" style="white-space: pre-wrap;">ABOUT ME <br>
+        I go by Morph0z online, and I am a programmer that mostly works on game development projects. I am currently in high school, and I am open to jobs or internships. Some of the skills I have are as previously mentioned programming, as well as animation in 2D and 3D, music composition and, 3D modeling. <br>(P.S. All the music on this site is made by me! (P.S.S Except for Practice 241 which is a remix of windmill isle from sonic unleashed.))
+      </div>
+      <div id="textBoxRight2" style="white-space: pre-wrap;">CONTACT ME <br><br>Email: Jamal009a@gmail.com <br><br>Discord: morpho_knight_ <br><br>Github: morph0z <br><br>I'm open to work, so reach out to me!</div> 
     </div>
 
-    <div class="textBoxRight" style="white-space: pre-wrap;">Email: Jamal009a@gmail.com <br>Discord: morpho_knight_ <br>Github: morph0z</div>
-
+    <!--
+    <div class="textBoxRight2" style="white-space: pre-wrap;">Email: Jamal009a@gmail.com <br>Discord: morpho_knight_ <br>Github: morph0z</div>
+    -->
 
     <!-- Music Player  -->
-    <script type="module" src="./javascript/musicPlayer.js"></script>
+    <script type="module" src="/javascript/musicPlayer.js"></script>
     <div class="music-container" id="music-container">
       <div class="music-info">
         <h4 id="title"></h4>

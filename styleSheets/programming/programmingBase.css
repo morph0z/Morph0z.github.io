@@ -26,39 +26,6 @@ html, body {
   animation-duration: 0.5s;
 }
 
-@keyframes titleAnimation {
-  0% {transform: translateY(100%); opacity: 0;}
-  100% {transform: translateY(0%); opacity: 100;}
-}
-
-.title{
-  font-size: 6em;
-  text-align: center;
-  margin-top: 280px;
-  color: var(--Contrast-Color2);
-  font-family: "splatink", sans-serif;
-  animation-name: titleAnimation;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
-
-  animation: bubble 1.0s forwards;
-
-}
-
-.subtitle {
-  font-size: 2em;
-  text-align: center;
-  color: var(--Contrast-Color2);
-  font-family: "utendo", sans-serif;
-}
-
-.sub-subtitle {
-  font-size: 2em;
-  text-align: center;
-  color: var(--Contrast-Color2);
-  font-family: "utendo", sans-serif;
-  margin-top: 100px;
-}
 
 * {
   font-family: "utendo", sans-serif;
@@ -102,6 +69,25 @@ ul li a {
 ul li a:hover {
   animation: hoverNav 0.5s;
   background-color: var(--color-accent)
+}
+
+.sub-subtitle {
+  font-size: 2em;
+  text-align: center;
+  color: var(--Contrast-Color2);
+  font-family: "utendo", sans-serif;
+  margin-top: 100px;
+}
+
+.codeProjectImage {
+  border-radius: 10%;
+}
+
+.codeProject{
+  display: flex;
+  margin: 3%;
+  width: auto;
+  height: auto;
 }
 
 @font-face {

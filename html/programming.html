@@ -1,58 +1,75 @@
 <!doctype html>
 <html lang="en">
     <head>
+
         <meta charset="UTF-8" />
-        <link rel="icon" type="image" href="assets/images/can.png" />
-        <link
-                rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
-        />
-        <link rel="stylesheet" href="style.css" />
+
+        <!-- Website Icon -->
+        <link rel="icon" type="image" href="/assets/images/MorphoProperTransparent.png" />
+
+        <!-- Import Stylesheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.21/dist/lenis.css">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/styleSheets/programming/programmingBase.css" />
+        <link rel="stylesheet" href="/styleSheets/programming/programmingAnime.css" />
+        <link rel="stylesheet" href="/styleSheets/musicPlayer.css" />
+        
+        <!-- Viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Jamal's Portfolio ART</title>
-        <style>
-            body { margin: 0; }
-        </style>
+        
+        <title>Jamal's Portfolio CODE</title>
+
     </head>
 
     <body>
-        <script type="module" src="animeStuffProgram.js"></script>
+        <script type="module" src="/javascript/AnimeJsStuff/animeProgram.js"></script>
+        
+        <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
+        
+        <!-- lenis -->
+        <script src="/javascript/lenis.js"></script>
 
+        <!-- Anime Script -->
+        <script type="module" src="/javascript/AnimeJsStuff/animeArt.js"></script>
+
+        <!-- Navigation Bar -->
         <nav class = "navbar">
             <ul class = "ul">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="art.html">Art</a></li>
-                <li><a href="programming.html">Programming</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/html/art.html">Art</a></li>
+                <li><a href="/html/programming.html">Programming</a></li>
             </ul>
         </nav>
-        <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
-        <script src="./lenisWork.js"></script>
-
-        <div class="textBoxesLeft">
-            <div class="textBoxLeft" style="white-space: pre-wrap;">ABOUT THIS &#10; &#10;A minecraft mod that I made, it is about kirby from the kirby series by nintendo.
-            </div>
-            <div class="textBoxLeft" style="white-space: pre-wrap;">ABOUT THIS &#10; &#10;This is a video game that I'm working on, it is a 2d top-down rougelike about never ending up in the same room twice.  
-            </div>
-            <div class="textBoxLeft" style="white-space: pre-wrap;">ABOUT THIS &#10; &#10;This is another video game that I'm working on. It is a 3D FPS movement shooter with a 2000s aesthetic about dodging bullets narrowly to gain access to abilities.
-            </div>
-        </div>
 
         <p class = "sub-subtitle">My Codings</p>
-        <div class = "codeProjects">
-            <a class = "codeProject" href="https://github.com/morph0z/KirbyModRemorphed" target="_blank" rel="noopener" title="My minecraft mod">
-                <img class = "codeProjectImage" src="assets/images/kirbymodremorphed.png" alt="Kirby Mod Remorphed" a/>
-            </a>
 
-            <a class = "codeProject" href="https://github.com/morph0z/Lost-At-Random" target="_blank" rel="noopener" title="My first game">
-                <img class = "codeProjectImage" src="assets/images/LostAtRandom.png" alt="Lost At Random"/>
-            </a>
-
-            <a class = "codeProject" href="https://github.com/morph0z/Sweating-Bullets" target="_blank" rel="noopener" title="My second game">
-                <img class = "codeProjectImage" src="assets/images/sweatingBullets.png" alt="Lost At Random"/>
-            </a>
+        <div id="infoGroupCenter">
+            <div class="row">
+                <div class="textBoxCenter">ABOUT THIS <br><br>A minecraft mod that I made, it is about kirby from the kirby series by nintendo.
+                    <a class = "codeProject" href="https://github.com/morph0z/KirbyModRemorphed" target="_blank" rel="noopener" title="My minecraft mod">
+                        <img class = "codeProjectImage" src="/assets/images/kirbymodremorphed.png" alt="Kirby Mod Remorphed" a/>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="textBoxCenter" style="white-space: pre-wrap;">ABOUT THIS <br><br>This is a video game that I'm working on, it is a 2d top-down rougelike about never ending up in the same room twice.  
+                    <a class = "codeProject" href="https://github.com/morph0z/Lost-At-Random" target="_blank" rel="noopener" title="My first game">
+                        <img class = "codeProjectImage" src="/assets/images/LostAtRandom.png" alt="Lost At Random"/>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="textBoxCenter" style="white-space: pre-wrap;">ABOUT THIS <br><br>This is another video game that I'm working on. It is a 3D FPS movement shooter with a 2000s aesthetic about dodging bullets narrowly to gain access to abilities.
+                    <a class = "codeProject" href="https://github.com/morph0z/Sweating-Bullets" target="_blank" rel="noopener" title="My second game">
+                        <img class = "codeProjectImage" src="/assets/images/sweatingBullets.png" alt="Lost At Random"/>
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <script type="module" src="./musicPlayer.js"></script>
+        <script type="module" src="/javascript/musicPlayer.js"></script>
         <div class="music-container" id="music-container">
             <div class="music-info">
                 <h4 id="title"></h4>
@@ -61,7 +78,7 @@
                 </div>
             </div>
 
-            <audio src="assets/music/practice127.mp3" id="audio"></audio>
+            <audio src="/assets/music/practice127.mp3" id="audio"></audio>
             <div class="navigation">
                 <button id="prev" class="action-btn">
                     <i class="fas fa-backward"></i>

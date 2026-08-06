@@ -13,53 +13,6 @@
   --hex-black-1: #000000;
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-@view-transition {
-  navigation: auto;
-}
-
-::view-transition-group(page-content){
-  animation-duration: 0.5s;
-}
-
-@keyframes titleAnimation {
-  0% {transform: translateY(100%); opacity: 0;}
-  100% {transform: translateY(0%); opacity: 100;}
-}
-
-.title{
-  font-size: 6em;
-  text-align: center;
-  margin-top: 280px;
-  color: var(--Contrast-Color2);
-  font-family: "splatink", sans-serif;
-  animation-name: titleAnimation;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
-
-  animation: bubble 1.0s forwards;
-
-}
-
-.subtitle {
-  font-size: 2em;
-  text-align: center;
-  color: var(--Contrast-Color2);
-  font-family: "utendo", sans-serif;
-}
-
-.sub-subtitle {
-  font-size: 2em;
-  text-align: center;
-  color: var(--Contrast-Color2);
-  font-family: "utendo", sans-serif;
-  margin-top: 100px;
-}
-
 * {
   font-family: "utendo", sans-serif;
   box-sizing: border-box;
@@ -99,11 +52,6 @@ ul li a {
   to {background-color: var(--Contrast-Color2)}
 }
 
-ul li a:hover {
-  animation: hoverNav 0.5s;
-  background-color: var(--color-accent)
-}
-
 @font-face {
   font-family: 'utendo';
   src: url(/assets/fonts/utendo-regular.woff2) format(woff2),
@@ -118,4 +66,54 @@ ul li a:hover {
   url(/assets/fonts/splatink.woff) format(woff);
   font-weight: normal;
   font-style: normal;
+}
+
+ul li a:hover {
+  animation: hoverNav 0.5s;
+  background-color: var(--color-accent)
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+}
+.video {
+  display: block;
+  margin: 0 auto;
+  width: 45%;
+  height: auto;
+  border-radius: 30px;
+}
+
+
+.sub-subtitle {
+  font-size: 2em;
+  text-align: center;
+  color: var(--Contrast-Color2);
+  font-family: "utendo", sans-serif;
+  margin-top: 100px;
+}
+
+.image {
+  max-height: none;
+  max-width: 99%;
+  position:relative;
+
+  display: block;
+  margin: 0 auto;
+  width: 45%;
+  height: auto;
+  border-radius: 30px;
+}
+.image-text {
+  font-size: 1.2em;
+  text-align: center;
+  color: darkblue;
+  font-family: "Arial", sans-serif;
+  margin-right: 190px;
+  margin-top: -100px;
 }

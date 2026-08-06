@@ -1,0 +1,28 @@
+div#infoGroupCenter{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 60px;
+  left: 5%;
+}
+
+div.textBoxCenter{
+  text-align: center;
+  display: flex;
+  position: relative;
+  font-size: 28px;
+  font-style: normal;
+  height: 430px;
+  width: 90%;
+
+  word-wrap: anywhere;
+  color: var(--text-on-CC2);
+  background-color: var(--Contrast-Color2);
+
+  border-radius: 15px;
+
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
