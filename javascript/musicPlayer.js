@@ -37,7 +37,7 @@ const songs = ['practice24','practice32','practice43','practice44','practice50'
               ];
               
 // Keep track of song
-let songIndex = 55;
+let songIndex = 145;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
