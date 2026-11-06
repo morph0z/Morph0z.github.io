@@ -52,3 +52,27 @@ div#textBoxRight2{
   padding-right: 30px;
   padding-bottom: 30px;
 }
+
+div#textBoxRight3{
+  text-align: left;
+  display: flex;
+  position: relative;
+  border-left-width: 0;
+  font-size: 28px;
+  font-style: normal;
+  height: 430px;
+  width: 800px;
+  right: 0;
+  left: 800px;
+
+  word-wrap: anywhere;
+  color: var(--text-on-CC2);
+  background-color: var(--Contrast-Color2);
+
+  border-radius: 15px;
+
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}

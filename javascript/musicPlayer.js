@@ -30,8 +30,12 @@ const songs = ['practice24','practice32','practice43','practice44','practice50'
                      ,'practice305','practice309','practice309pianoSolo','practice311','practice314','practice316','practice317','practice317bit'
                      ,'practice318','practice319pre','practice319','practice320','practice322','practice324','practice327','practice328','practice330'
                      ,'practice331', 'practice333fuller', 'practice340', 'practice341slightlybetter', 'practice342', 'practice343slightlybetter', 'practice344'
+                     ,'practice348', 'practice356', 'practice358more','practice360full','practice362slightlybetter','practice363','practice364','practice365'
+                     ,'practice370', 'practice371', 'practice373more', 'practice379', 'practice380', 'practice381','practice384','practice388','practice392'
+                     ,'practice394', 'practice395more', 'practice397','practice398','practice399','practice400','practice403','practice404notfoundbass','practice405','practice408'
+                     ,'practice410','practice412','practice415slightlybetter','practice416' 
               ];
-
+              
 // Keep track of song
 let songIndex = 55;
 

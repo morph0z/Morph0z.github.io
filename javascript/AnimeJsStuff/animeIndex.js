@@ -82,6 +82,12 @@ const textBoxRight2 = createDraggable('#textBoxRight2', {
         onRelease: () => { animateLayout() }
     })
 
+const textBoxRight3 = createDraggable('#textBoxRight3', {
+        container: [1,1,1,1],
+        releaseEase: spring({ bounce: .7 }),
+        onRelease: () => { animateLayout() }
+    })
+
 function animateLayout() {
   layoutInfo1.record();
   const first = layoutInfo1.root.firstElementChild;
